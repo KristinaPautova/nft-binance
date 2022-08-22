@@ -26,7 +26,7 @@ const Chat = () => {
         console.log(Math.floor(Date.now()/1000))
         let obj = {
             comment,
-            data: Date.now(),
+            data: new Date( Date.now()*1000) ,
             user: user.email
         }
         addComment(obj);
@@ -35,18 +35,18 @@ const Chat = () => {
     }
 
 
-    function timeConverter(timer){
-        let a = new Date(timer * 1000);
-        let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-        let year = a.getFullYear();
-        let month = months[a.getMonth()];
-        let date = a.getDate();
-        let hour = a.getHours();
-        let min = a.getMinutes();
-        let sec = a.getSeconds();
-        let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-        return time;
-    }
+    // function timeConverter(timer){
+    //     let a = new Date(timer * 1000);
+    //     let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    //     let year = a.getFullYear();
+    //     let month = months[a.getMonth()];
+    //     let date = a.getDate();
+    //     let hour = a.getHours();
+    //     let min = a.getMinutes();
+    //     let sec = a.getSeconds();
+    //     let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+    //     return time;
+    // }
 
     useEffect(() => {
         getTopics()
@@ -61,7 +61,7 @@ const Chat = () => {
                         <React.Fragment>
                             <CardContent>
                                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                    {timeConverter(elem.data)}
+                                    {elem.data}
                                 </Typography>
                                 <Typography variant="h6" component="div">
                                     {elem.user}
