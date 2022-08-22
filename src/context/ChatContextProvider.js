@@ -1,8 +1,8 @@
 import React, {createContext, useReducer} from 'react';
 import axios from "axios";
 
+// const APIChat = 'http://localhost:8000/chat'
 const APIChat = 'https://nft-project-binance.herokuapp.com/chat'
-
 
 
 export const chatContext = createContext();

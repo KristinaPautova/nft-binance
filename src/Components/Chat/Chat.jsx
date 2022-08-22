@@ -24,29 +24,20 @@ const Chat = () => {
             return;
         }
         console.log(Math.floor(Date.now()/1000))
+        let date = new Date(Date.now());
+        const str = `Date: ${date.getDate()}/${
+            date.getMonth() + 1
+        }/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} `;
+
         let obj = {
             comment,
-            data: new Date( Date.now()*1000) ,
+            data: str ,
             user: user.email
         }
         addComment(obj);
         setComment('')
         getTopics()
     }
-
-
-    // function timeConverter(timer){
-    //     let a = new Date(timer * 1000);
-    //     let months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-    //     let year = a.getFullYear();
-    //     let month = months[a.getMonth()];
-    //     let date = a.getDate();
-    //     let hour = a.getHours();
-    //     let min = a.getMinutes();
-    //     let sec = a.getSeconds();
-    //     let time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
-    //     return time;
-    // }
 
     useEffect(() => {
         getTopics()
