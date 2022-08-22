@@ -2,7 +2,7 @@ import React, {createContext, useReducer} from 'react';
 import axios from "axios";
 import {useLocation, useNavigate} from "react-router-dom";
 
-const API = "http://localhost:8000/nft";
+const API = "https://nft-project-binance.herokuapp.com/nft";
 
 export const nftContext = createContext();
 
