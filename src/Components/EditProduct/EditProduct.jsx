@@ -3,19 +3,16 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import "./EditProduct.css";
 import { useParams } from "react-router-dom";
-import {nftContext} from "../../context/NFTContextProvider";
+import { nftContext } from "../../context/NFTContextProvider";
 
 export default function EditProduct() {
-  const { editProduct, productDetails, getOneProduct } =
-    useContext(nftContext);
+  const { editProduct, productDetails, getOneProduct } = useContext(nftContext);
 
   const [editTitle, setEditTitle] = useState(productDetails.title);
   const [editPrice, setEditPrice] = useState(productDetails.price);
   const [editOwner, setEditOwner] = useState(productDetails.owner);
   const [editImage, setEditImage] = useState(productDetails.img);
-  const [editCreator, setEditCreator] = useState(
-    productDetails.creator
-  );
+  const [editCreator, setEditCreator] = useState(productDetails.creator);
   const [editCategory, setEditCategory] = useState(productDetails.category);
 
   function handleClick() {
@@ -24,7 +21,7 @@ export default function EditProduct() {
       !editPrice ||
       !editImage ||
       !editCreator ||
-        !editOwner ||
+      !editOwner ||
       !editCategory
     ) {
       alert("Введите все инпуты");
@@ -85,12 +82,12 @@ export default function EditProduct() {
             onChange={(e) => setEditCreator(e.target.value)}
           />
           <TextField
-              sx={{ width: 300 }}
-              id="outlined-basic"
-              label="Owner"
-              variant="outlined"
-              value={editOwner}
-              onChange={(e) => setEditOwner(e.target.value)}
+            sx={{ width: 300 }}
+            id="outlined-basic"
+            label="Owner"
+            variant="outlined"
+            value={editOwner}
+            onChange={(e) => setEditOwner(e.target.value)}
           />
           <TextField
             sx={{ width: 300 }}

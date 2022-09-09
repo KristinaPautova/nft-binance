@@ -1,44 +1,42 @@
-.logo{
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    line-height: 1.5;
-    font-size: 19px;
-    margin-left: 5px;
+.logo {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 19px;
+  margin-left: 5px;
 }
 
-.logo:hover{
-    color: black;
+.logo:hover {
+  color: black;
 }
 
-.link{
-    color: rgb(215, 189, 86);
+.link {
+  color: rgb(215, 189, 86);
 }
 
-.link:hover{
-    color: rgb(252, 213, 53);
+.link:hover {
+  color: rgb(252, 213, 53);
 }
 
-.active{
-    color: black;
+.active {
+  color: black;
 }
 
-.love{
-    color: rgb(215, 86, 101);
+.love {
+  color: rgb(215, 86, 101);
 }
 
-.love:hover{
-    color: rgb(252, 53, 60);
+.love:hover {
+  color: rgb(252, 53, 60);
 }
 
-@media all and (max-width: 375px){
+@media all and (max-width: 375px) {
+  .love {
+    display: none;
+  }
 
-    .love{
-        display: none;
-    }
-
-    .link{
-        display: none;
-    }
-
+  .link {
+    display: none;
+  }
 }

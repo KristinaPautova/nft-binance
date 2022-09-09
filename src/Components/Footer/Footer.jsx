@@ -4,7 +4,6 @@ import svg1 from "../../image/Group27.svg";
 import svg3 from "../../image/Group29.svg";
 import svg4 from "../../image/Group30.svg";
 
-
 import "./footer.css";
 
 const Footer = () => {

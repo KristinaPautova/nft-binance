@@ -62,21 +62,24 @@ const Tutorial = () => {
           <li>NFT Deposits - Approved Contract Addresses</li>
           <li>How to Claim The Weeknd Souvenir NFT</li>
           <li>Binance NFT Minting Rules</li>
-          <li>Binance NFT Sales Settlement Postponement Policy for Standard NFT
+          <li>
+            Binance NFT Sales Settlement Postponement Policy for Standard NFT
             Collections
           </li>
           <li>How to Report Violations on Binance NFT</li>
-          <li>How to Purchase NFTs Using Binance Pay on Binance NFT Marketplace
+          <li>
+            How to Purchase NFTs Using Binance Pay on Binance NFT Marketplace
           </li>
           <li>How to Access Binance NFT Mini App on Binance App</li>
-          <li>Why Do I Need to Complete Face Verification Again When Withdrawing
+          <li>
+            Why Do I Need to Complete Face Verification Again When Withdrawing
             NFT?
           </li>
           <li>What are the NFT Transaction Fees on Binance</li>
           <li>NFT Deposits - Approved NFT Avatar Contract Addresses</li>
-          <li>Binance NFT Subscription Mechanism Winner Selection Algorithm
-          </li>
-          <li>What Is Binance NFT Subscription Mechanism and How to Participate
+          <li>Binance NFT Subscription Mechanism Winner Selection Algorithm</li>
+          <li>
+            What Is Binance NFT Subscription Mechanism and How to Participate
           </li>
           <li>How to Withdraw NFT from Binance</li>
         </ul>

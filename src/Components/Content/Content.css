@@ -1,4 +1,4 @@
-.content{
+.content {
   box-sizing: border-box;
   margin: 0px auto;
   min-width: 0px;
@@ -7,7 +7,6 @@
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 100px;
-
 }
 
 .content__top {
@@ -15,13 +14,13 @@
   justify-content: space-between;
   align-items: center;
 }
-.first-tx > h1{
+.first-tx > h1 {
   font-size: 28px;
   font-weight: 500;
   color: rgb(30, 35, 41);
 }
 
-.second-tx{
+.second-tx {
   display: flex;
   flex-direction: column;
   row-gap: 25px;
@@ -32,7 +31,7 @@
   border-radius: 10px;
 }
 
-.second-tx > h5{
+.second-tx > h5 {
   font-size: 20px;
   line-height: 28px;
   color: rgb(30, 35, 41);
@@ -40,7 +39,7 @@
   margin: 25px 0;
 }
 
-.second-tx > span{
+.second-tx > span {
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
